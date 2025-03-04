@@ -15,7 +15,7 @@
             <div class="mb-4">
                 <label>Option {{ $index + 1 }}</label>
                 <div class="flex gap-2">
-                    <input type="text" wire:wire:model="options.{{ $index }}"/>
+                    <input type="text" wire:model="options.{{ $index }}"/>
                     <button class="btn" wire:click.prevent="removeOption({{ $index }})">Remove</button>
                 </div>
             </div>
